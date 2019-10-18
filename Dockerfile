@@ -14,7 +14,8 @@ RUN apt-get -y install sudo \
 
 RUN apt-get -y install libcanberra-gtk-module \
     libcanberra-gtk3-module \
-    dbus-x11
+    dbus-x11 \
+    wget
 
 RUN apt-get update &&\
     apt-get -y install build-essential cmake pkg-config libx11-dev libatlas-base-dev libgtk-3-dev libboost-python-dev
